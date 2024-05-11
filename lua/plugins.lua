@@ -132,6 +132,7 @@ return {
 		config = function()
 			require("lspconfig").clangd.setup{}
 			require("lspconfig").asm_lsp.setup{}
+			require("lspconfig").lua_ls.setup{}
  		end
 
 	},	
