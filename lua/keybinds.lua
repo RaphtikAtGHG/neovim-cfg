@@ -24,4 +24,7 @@ map("<space>sf", ":Telescope find_files<CR>")
 map("<space>ntt", ":NvimTreeToggle<CR>")
 map("<space>ntf", ":NvimTreeFocus<CR>")
 
+map("<space>st", ":TodoTelescope<CR>")
 
+map("<space>mp", ":MarkdownPreviewToggle<CR>")
+map("<space>mi", ":MakeitOpen<CR>")

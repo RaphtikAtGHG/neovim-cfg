@@ -22,4 +22,5 @@ require("style")
 -- Keymap
 require("keybinds")
 
+vim.opt.termguicolors = true
 
