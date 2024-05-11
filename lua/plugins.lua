@@ -4,6 +4,30 @@ return {
     		event = "InsertEnter",
     		config = true
   	},
+	 { -- This plugin
+  "Zeioth/makeit.nvim",
+  cmd = {"MakeitOpen", "MakeitToggleResults", "MakeitRedo"},
+  dependencies = { "stevearc/overseer.nvim" },
+  opts = {},
+},
+{ -- The task runner we use
+  "stevearc/overseer.nvim",
+  commit = "400e762648b70397d0d315e5acaf0ff3597f2d8b",
+  cmd = {"MakeitOpen", "MakeitToggleResults", "MakeitRedo"},
+  opts = {
+    task_list = {
+      direction = "bottom",
+      min_height = 25,
+      max_height = 25,
+      default_detail = 1
+    },
+  },
+},
+{
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+-- or                              , branch = '0.1.x',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 	"rcarriga/nvim-notify",
 	{
     		'nvim-lualine/lualine.nvim',
@@ -80,15 +104,6 @@ return {
 		end
 	},
 	"nordtheme/vim",
-	{
-		"ibhagwan/fzf-lua",
-		-- optional for icon support
-  		dependencies = { "nvim-tree/nvim-web-devicons" },
-  		config = function()
-    			-- calling `setup` is optional for customization
-    			require("fzf-lua").setup({})
-  		end
-	},
 	"github/copilot.vim",
 	{
 		"nvim-tree/nvim-tree.lua",

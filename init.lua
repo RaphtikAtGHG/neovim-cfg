@@ -22,7 +22,4 @@ require("style")
 -- Keymap
 require("keybinds")
 
--- Plugins
-require("nvim-cmp")
-
 

@@ -19,7 +19,9 @@ vim.api.nvim_set_keymap('n', '<space>al', ':botright vsplit<CR>:vertical resize 
 vim.api.nvim_set_keymap('n', '<space>r', ':botright vsplit<CR>:resize -10<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<space>b', ':split<CR>:resize +10<CR>', { noremap = true, silent = true })
 
-map("<space>sf", ":FzfLua files<CR>")
+map("<space>sf", ":Telescope find_files<CR>")
 
 map("<space>ntt", ":NvimTreeToggle<CR>")
 map("<space>ntf", ":NvimTreeFocus<CR>")
+
+
